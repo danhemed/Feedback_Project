@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html{
+    font-family: "Rubik", sans-serif;
+}
+
 body {
     padding: 10vw 25vw;
     background-color: rgb(167, 115, 251);
     margin: auto;
     height: 50vh;
-    font-family: "Rubik", sans-serif;
     color: rgb(41, 14, 85);
 }
 
@@ -37,6 +41,51 @@ p {
     font-size: 2.5vw;
     font-weight: 700;
     padding: 1.5vw;
+    background-color: rgb(41, 14, 85);
+    color: white;
+    border-radius: 100px;
+}
+
+label {
+    font-size: 2.5vw;
+    font-weight: 300;
+    margin: 10px 0px;
+}
+
+select{
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    color: rgb(41, 14, 85);
+    font-size: 2.5vw;
+    font-weight: 700;
+    width: 100%;
+}
+
+.textComp{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    color: rgb(41, 14, 85);
+    font-size: 2.5vw;
+    height: 20vh;
+    resize: vertical;
+    border-radius: 5vh;
+    padding: 10px;
+    direction: rtl;
+}
+
+input {
+    font-size: 2.5vw;
+    font-weight: 700;
+    width: 100%;
+}
+
+.send{
+    font-family: "Rubik", sans-serif;
+    border-radius: 100px;
+    font-size: 2.5vw;
+    font-weight: 700;
+    padding: 2vw;
     background-color: rgb(41, 14, 85);
     color: white;
     border-radius: 100px;

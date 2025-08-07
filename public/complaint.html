@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מערכת תלונות</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="index">
+        <h1>מערכת התלונות האנונימית של צה"ל</h1>
+        <h2>על מה תרצו להתלונן??</h2>
+        <form action="/submit" method="post">
+            <label for="type">בחר סוג תלונה:</label>
+            <br>
+            <select name="type" id="type" required>
+                <option value="" disabled selected hidden></option>
+                <option value="food">אוכל</option>
+                <option value="equipment">ציוד</option>
+                <option value="commands">פקודות</option>
+                <option value="other">אחר</option>
+            </select>
+            <br><br>
+
+            <label for="complaint">התלונן כאוות נפשך:</label>
+            <textarea class="textComp" name="complaint" id="complaint" required></textarea>            <br><br>
+
+            <input class="send" type="submit" value="שלח את תלונתך המכוערת אלינו">
+        </form>
+    </section>
+</body>
+</html>
