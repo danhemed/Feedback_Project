@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body {
+    padding: 10vw 25vw;
+    background-color: rgb(167, 115, 251);
+    margin: auto;
+    height: 50vh;
+    font-family: "Rubik", sans-serif;
+    color: rgb(41, 14, 85);
+}
+
+.index {
+    background-color: white;
+    padding: 5vh;
+    border-radius: 5vw;
+    box-shadow: 0px 0px 40px 0px rgba(41, 14, 85, 0.3);
+    text-align: center;
+}
+
+h1 {
+    font-size: 4vw;
+    font-weight: 800;
+    margin: 2vw;
+}
+
+h2 {
+    font-size: 2.5vw;
+    font-weight: 500;
+    margin: 2vw;
+}
+
+p {
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+.complaint {
+    font-size: 2.5vw;
+    font-weight: 700;
+    padding: 1.5vw;
+    background-color: rgb(41, 14, 85);
+    color: white;
+    border-radius: 100px;
+}
