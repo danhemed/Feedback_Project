@@ -8,11 +8,10 @@ body {
     padding: 10vw 25vw;
     background-color: rgb(167, 115, 251);
     margin: auto;
-    height: 50vh;
     color: rgb(41, 14, 85);
 }
 
-.index {
+section {
     background-color: white;
     padding: 5vh;
     border-radius: 5vw;
@@ -23,7 +22,7 @@ body {
 h1 {
     font-size: 4vw;
     font-weight: 800;
-    margin: 2vw;
+    margin: 0vw 2vw 2vw 2vw;
 }
 
 h2 {
@@ -32,18 +31,30 @@ h2 {
     margin: 2vw;
 }
 
+h5 {
+    font-weight: 200;
+    font-size: 2vh;
+
+}
+
 p {
     font-size: 2vw;
     font-weight: 300;
 }
 
 .complaint {
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
     font-size: 2.5vw;
     font-weight: 700;
-    padding: 1.5vw;
+    padding: 1vh 2vw;
     background-color: rgb(41, 14, 85);
     color: white;
     border-radius: 100px;
+}
+
+.complaint:hover {
+    background-color: rgb(167, 115, 251);
 }
 
 label {
@@ -53,8 +64,8 @@ label {
 }
 
 select{
-    text-align: center;
     font-family: "Rubik", sans-serif;
+    text-align: center;
     color: rgb(41, 14, 85);
     font-size: 2.5vw;
     font-weight: 700;
@@ -78,6 +89,7 @@ input {
     font-size: 2.5vw;
     font-weight: 700;
     width: 100%;
+    border-radius: 20px;
 }
 
 .send{
@@ -89,4 +101,8 @@ input {
     background-color: rgb(41, 14, 85);
     color: white;
     border-radius: 100px;
+}
+
+.send:hover {
+    background-color: rgb(167, 115, 251);
 }
