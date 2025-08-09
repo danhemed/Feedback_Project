@@ -1,5 +1,6 @@
 import express from "express";
 import router from "./routes/complaints.js";
+import { connect } from "./db/connect.js";
 import { config } from "dotenv";
 config();
 
@@ -13,6 +14,7 @@ app.use(express.static("./public"));
 
 app.use('/feedback', router);
 
+connect();
 app.listen(port, () => {
     console.log(`server run on http://localhost:${port}`);
 });

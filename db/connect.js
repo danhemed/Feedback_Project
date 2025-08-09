@@ -8,7 +8,9 @@ let db;
 
 export async function connect() {
     try {
-        if (!db) {
+        if (db) {
+            return db;
+        } else {         
             await client.connect();
             db = client.db('feedbacks');
             console.log("Connected to MongoDB");
@@ -17,4 +19,11 @@ export async function connect() {
     } catch (err) {
         console.log(err);
     }
+}
+
+export function getDB() {
+    if (!db) {
+        throw new Error("Database not connected. Call connectDB first.");
+    }
+    return db;
 }
