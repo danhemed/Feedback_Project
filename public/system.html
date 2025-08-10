@@ -8,11 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <heder>
+      <section id="menu">
+        <a class="menu" href="/index.html">בית</a>
+        <a class="menu" href="/complaint.html">מערכת תלונות</a>
+        <a class="menu" href="/admin.html">כניסת מנהל</a>
+        <a class="menu" href="/system.html">מערכת ניהול</a>
+      </section>
+    </heder>
     <section>
         <h1>מערכת ניהול התלונות האנונימית של צה"ל</h1>
         <h2>מנהל יקר מה תרצה לעשות?</h2>
         <form action="/feedback/showAllComplaints" method="get">
             <input class="send" type="submit" value="צפה בכל התלונות">
+        </form>
+        <br>
+
+        <form action="/feedback/delete" method="post">
+            <label for="delete">כדי למחוק תלונה הכנס ID:</label><br>
+            <input type="text" id="delete" name="delete">
+            <br><br>
+            <input class="send" type="submit" value="מחק את התלונה">
         </form>
     </section>
 </body>

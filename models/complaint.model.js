@@ -1,4 +1,5 @@
 import { getDB } from "../db/connect.js";
+import { ObjectId } from "mongodb";
 
 export async function insertFeedback(feedback) {
     feedback.timestamp = new Date();
@@ -9,4 +10,9 @@ export async function insertFeedback(feedback) {
 export async function getFeedbacks() {
     const db = getDB();
     return db.collection("feedback").find().toArray();
+};
+
+export async function deleteFeedback(id) {
+    const db = getDB();
+    return db.collection("feedback").deleteOne({ _id: new ObjectId(id) });
 };

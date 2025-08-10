@@ -5,17 +5,39 @@ html{
 }
 
 body {
-    padding: 10vw 25vw;
-    background-color: rgb(167, 115, 251);
+    /* padding: 0% 10% 10% 10%; */
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(131, 115, 251);
+    color: rgb(25, 14, 85);
+}
+
+#menu {
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255);
     margin: auto;
-    color: rgb(41, 14, 85);
+    margin-bottom: 50px;
+}
+
+.menu {
+    padding: 0vw 2vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+.menu:hover {
+    color: rgb(131, 115, 251);
 }
 
 section {
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: white;
-    padding: 5vh;
+    padding: 5vh 5vw;
     border-radius: 5vw;
-    box-shadow: 0px 0px 40px 0px rgba(41, 14, 85, 0.3);
+    box-shadow: 0px 0px 40px 0px rgba(33, 14, 85, 0.3);
     text-align: center;
 }
 
@@ -32,9 +54,12 @@ h2 {
 }
 
 h5 {
+    font-size: 2vw;
     font-weight: 200;
-    font-size: 2vh;
+}
 
+a {
+    color: rgb(25, 14, 85);
 }
 
 p {
@@ -48,13 +73,14 @@ p {
     font-size: 2.5vw;
     font-weight: 700;
     padding: 1vh 2vw;
-    background-color: rgb(41, 14, 85);
+    background-color: rgb(25, 14, 85);
     color: white;
+    width: 100%;
     border-radius: 100px;
 }
 
 .complaint:hover {
-    background-color: rgb(167, 115, 251);
+    background-color: rgb(131, 115, 251);
 }
 
 label {
@@ -66,17 +92,17 @@ label {
 select{
     font-family: "Rubik", sans-serif;
     text-align: center;
-    color: rgb(41, 14, 85);
+    color: rgb(25, 14, 85);
     font-size: 2.5vw;
     font-weight: 700;
     width: 100%;
 }
 
-.textComp{
+#textComp{
     width: 100%;
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
-    color: rgb(41, 14, 85);
+    color: rgb(25, 14, 85);
     font-size: 2.5vw;
     height: 20vh;
     resize: vertical;
@@ -98,11 +124,12 @@ input {
     font-size: 2.5vw;
     font-weight: 700;
     padding: 2vw;
-    background-color: rgb(41, 14, 85);
+    background-color: rgb(25, 14, 85);
     color: white;
     border-radius: 100px;
+    width: auto;
 }
 
 .send:hover {
-    background-color: rgb(167, 115, 251);
+    background-color: rgb(131, 115, 251);
 }

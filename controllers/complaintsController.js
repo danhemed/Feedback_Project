@@ -1,5 +1,5 @@
-import { insertFeedback, getFeedbacks } from "../models/complaint.model.js";
-import { checkAdmin } from "../models/admin.model.js";
+import { insertFeedback, getFeedbacks, deleteFeedback } from "../models/complaint.model.js";
+import { checkAdmin } from "../middleware/admin.middleware.js";
 
 export const getFeedbacksCtrl = async (req, res) => {
     try {
@@ -23,10 +23,20 @@ export const enterAdmin = async (req, res) => {
 }
 
 export const insertFeedbackCtrl = async (req, res) => {
+    console.log(typeof req.body);
     try {
         await insertFeedback({ ...req.body });
         res.status(201).json({message: "complaints send"});
     } catch (err) {
         res.status(500).json({ error: `from insert feedback server ${err.message}` });
+    }
+}
+
+export const deleteFeedbackCtrl = async (req, res) => {
+    try {
+        await deleteFeedback(req.body.delete);
+        res.json({message: "delete successfully!"});
+    } catch (err) {
+        res.status(500).json({ error: `from delete feedbacks server ${err.message}` });
     }
 }
